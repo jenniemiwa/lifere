@@ -22,7 +22,6 @@
             margin: 0;
         }
 
-        /* 核心调整：整体宽度缩小至360px，更接近真实小票宽度 */
         .app {
             max-width: 360px;
             width: 100%;
@@ -33,7 +32,6 @@
             border: 1px solid #c9b89b;
         }
 
-        /* 小票头部装饰 */
         .receipt-header-decoration {
             background: #c52b2b;
             height: 6px;
@@ -41,12 +39,11 @@
         }
 
         .content {
-            padding: 16px 14px 20px;  /* 减小内边距 */
+            padding: 16px 14px 20px;
         }
 
-        /* 输入区域 — 仿超市待办便签 */
         .input-section {
-            margin-bottom: 24px;       /* 减小底部间距 */
+            margin-bottom: 24px;
             background: #fffcf6;
             border-radius: 16px;
             padding: 14px 12px;
@@ -59,7 +56,7 @@
             align-items: center;
             gap: 6px;
             font-weight: bold;
-            font-size: 0.85rem;        /* 稍微缩小 */
+            font-size: 0.85rem;
             letter-spacing: 0.5px;
             color: #52443b;
             margin-bottom: 8px;
@@ -78,7 +75,7 @@
             width: 100%;
             border: 2px solid #dacbb4;
             background: white;
-            border-radius: 14px;        /* 稍微缩小 */
+            border-radius: 14px;
             padding: 12px 14px;
             font-family: 'Courier New', Courier, monospace;
             font-size: 0.95rem;
@@ -104,7 +101,7 @@
 
         .btn-group {
             display: flex;
-            gap: 10px;                 /* 按钮间距缩小 */
+            gap: 10px;
             margin-top: 14px;
             flex-wrap: wrap;
         }
@@ -114,7 +111,7 @@
             border: none;
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
-            font-size: 1rem;            /* 稍微缩小 */
+            font-size: 1rem;
             padding: 10px 16px;
             border-radius: 40px;
             color: #352d26;
@@ -145,27 +142,26 @@
             box-shadow: 0 4px 0 #1b3d45, 0 6px 10px rgba(0,0,0,0.15);
         }
 
-        /* ---------- 小票预览卡片 ---------- */
+        /* 小票预览卡片 */
         .ticket-preview {
             background: #ffffff;
             border-radius: 22px 22px 14px 14px;
-            padding: 18px 14px 18px;     /* 减小内边距 */
+            padding: 18px 14px 18px;
             box-shadow: 0 10px 18px rgba(0,0,0,0.25), 0 0 0 2px #dfd2bc, inset 0 0 0 2px #fcf8f0;
             font-family: 'Courier New', Courier, monospace;
             transition: all 0.2s;
             border: 1px solid #c6b293;
         }
 
-        /* 热敏纸纹理 */
         .ticket-content {
             background: #fefcf8;
-            padding: 12px 12px 14px;     /* 减小内边距 */
+            padding: 12px 12px 14px;
             border-radius: 12px;
             box-shadow: inset 0 0 0 1px #eee5d8, inset 0 0 20px #f5ede2;
         }
 
         .store-name {
-            font-size: 1.5rem;            /* 略微缩小 */
+            font-size: 1.5rem;
             font-weight: 800;
             letter-spacing: 1px;
             text-align: center;
@@ -189,7 +185,7 @@
         .datetime-line {
             display: flex;
             justify-content: space-between;
-            font-size: 0.8rem;            /* 稍微缩小 */
+            font-size: 0.8rem;
             font-weight: 600;
             color: #3a332c;
             padding: 8px 2px 6px;
@@ -207,7 +203,6 @@
             font-weight: 500;
         }
 
-        /* 任务列表 — 仿商品条目 */
         .items-header {
             display: flex;
             justify-content: space-between;
@@ -223,12 +218,8 @@
         .items-list {
             list-style: none;
             padding: 4px 0 8px;
-            max-height: 200px;
-            overflow-y: auto;
             border-bottom: 2px dashed #bfab8f;
             margin-bottom: 8px;
-            scrollbar-width: thin;
-            scrollbar-color: #b99f81 #f0e3d3;
         }
 
         .items-list li {
@@ -262,14 +253,32 @@
             border: 1px solid #e1b699;
         }
 
+        /* 合计行 - 新增样式 */
+        .total-line {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #2b4f3b;
+            padding: 8px 2px 6px;
+            border-bottom: 1px solid #cfbea5;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            background: #edf5e8;
+            border-radius: 20px;
+            padding: 8px 12px;
+        }
+
         /* 积极话语区域 */
         .positive-message {
             background: #faf1e4;
             padding: 10px 12px;
             border-radius: 30px;
             margin: 8px 0 10px;
-            font-style: italic;
-            font-size: 0.95rem;          /* 缩小 */
+            /* font-style: italic; removed */
+            font-family: 'Arial', 'Helvetica', 'Microsoft YaHei', sans-serif;
+            font-size: 0.95rem;
             font-weight: 600;
             color: #3f4d3c;
             text-align: center;
@@ -280,7 +289,6 @@
             word-break: break-word;
         }
 
-        /* 收尾装饰线 */
         .ticket-footer {
             display: flex;
             justify-content: space-between;
@@ -311,7 +319,6 @@
             letter-spacing: 1px;
         }
 
-        /* 小票水印 */
         .powered {
             text-align: right;
             font-size: 0.5rem;
@@ -319,7 +326,6 @@
             margin-top: 6px;
         }
 
-        /* 空状态提示 */
         .empty-tasks {
             text-align: center;
             color: #a79986;
@@ -328,7 +334,6 @@
             font-size: 0.85rem;
         }
 
-        /* 保存时提示 */
         .save-hint {
             text-align: center;
             font-size: 0.65rem;
@@ -342,10 +347,9 @@
     <div class="app">
         <div class="receipt-header-decoration"></div>
         <div class="content">
-            <!-- 输入区 -->
             <div class="input-section">
                 <div class="label-icon">
-                    📋 批量任务 <span>每行一项</span>
+                    📋 购买筐 <span>每行一项</span>
                 </div>
                 <textarea id="taskInput" rows="4" placeholder="买牛奶&#10;拿快递&#10;周五开会资料&#10;给妈妈电话&#10;取现金">买牛奶
 拿快递
@@ -357,10 +361,9 @@
                 </div>
             </div>
 
-            <!-- 小票预览区域 动态填充 -->
             <div class="ticket-preview" id="ticketPreview">
                 <div class="ticket-content" id="ticketContent">
-                    <!-- 全部内容由js生成 -->
+                    <!-- 由js生成 -->
                 </div>
             </div>
             <div class="save-hint" id="saveHint">点击「保存小票」即可下载图片到本地</div>
@@ -369,10 +372,9 @@
 
     <script>
         (function() {
-            // ----------------- 积极语句库 -----------------
             const quotes = [
                 "✨ 今天也要像太阳一样发光 ✨",
-                "🌸 每一件小事都值得庆祝",
+                "🛒 每一件小事都值得庆祝",
                 "⭐ 你已完成今日进度 75%",
                 "🌸 别着急，慢慢来比较快",
                 "💪 任务清零，元气满满",
@@ -380,12 +382,12 @@
                 "📦 生活正在有序打包中",
                 "🌿 一切都会准时到达",
                 "🌟 小事做好，就是大事",
-                "🌿 专注当下，收获未来",
+                "🌿 日日行不怕千万里",
+                "🌿 时时做不惧千万事",
                 "💌 别忘记爱自己多一点",
                 "🕊️ 轻松一点，快乐一点"
             ];
 
-            // 随机生成一个收银员名字
             const cashiers = [
                 "EMMA", "李 君", "王 洁", "DAVE", "LISA", "阿 咪", 
                 "小 陈", "JAMES", "MIA", "赵 总", "SUNNY"
@@ -395,7 +397,6 @@
                 return arr[Math.floor(Math.random() * arr.length)];
             }
 
-            // 格式化当前时间: 2025-02-18  15:43 (周二)
             function getFormattedDateTime() {
                 const now = new Date();
                 const year = now.getFullYear();
@@ -411,14 +412,12 @@
                 return `${year}.${month}.${day} (${weekday}) ${hours}:${minutes}`;
             }
 
-            // 解析输入文本
             function parseTasks(input) {
                 return input.split(/\n/)
                     .map(line => line.trim())
                     .filter(line => line !== "");
             }
 
-            // 生成小票HTML
             function generateTicketHTML(tasks, cashierName, quoteText, dateTimeStr) {
                 const tasksListHtml = tasks.length === 0 
                     ? `<div class="empty-tasks">—— 暂无任务，请批量输入 ——</div>`
@@ -428,6 +427,10 @@
                             <span class="task-qty">1 项</span>
                         </li>
                     `).join('');
+
+                // 计算合计事项数和累计积分
+                const totalItems = tasks.length;
+                const totalPoints = totalItems * 10;
 
                 function escapeHtml(unsafe) {
                     return unsafe.replace(/[&<>"]/g, function(m) {
@@ -440,17 +443,17 @@
                 }
 
                 return `
-                    <div class="store-name">老己超市</div>
+                    <div class="store-name"> 老己超市</div>
                     <div class="store-sub">* 存根联 *  让行动看得见</div>
 
                     <div class="datetime-line">
-                        <span>📅 ${dateTimeStr}</span>
+                        <span> ${dateTimeStr}</span>
                         <span>#${String(Math.floor(Math.random()*1000)).padStart(3,'0')}</span>
                     </div>
 
                     <div class="cashier-line">
-                        <span>👤 收银员: ${cashierName}</span>
-                        <span>💰 柜台 03</span>
+                        <span> 收银员: ${cashierName}</span>
+                        <span> 柜台 03</span>
                     </div>
 
                     <div class="items-header">
@@ -462,23 +465,27 @@
                         ${tasksListHtml}
                     </ul>
 
+                    <!-- 新增合计事项与累计积分 -->
+                    <div class="total-line">
+                        <span>合计事项: ${totalItems} 项</span>
+                        <span>累计积分: ${totalPoints} 分</span>
+                    </div>
+
                     <div class="positive-message">
                         ${quoteText}
                     </div>
 
                     <div class="ticket-footer">
-                        <span>已支付 ❤️ 积极积分</span>
-                        <span>谢谢惠顾</span>
+                        <span>状态：全款拿下✨</span>
+                        <span>❤️谢谢惠顾❤️</span>
                     </div>
 
-                    <div class="barcode-placeholder">
-                        <span>||| ||| ||| |||</span>
-                    </div>
-                    <div class="powered">小票生成 · 此刻好心情</div>
+                   
+
+                    <div class="powered"></div>
                 `;
             }
 
-            // 更新视图
             function refreshTicket() {
                 const inputEl = document.getElementById('taskInput');
                 const ticketContainer = document.getElementById('ticketContent');
@@ -495,7 +502,6 @@
             window.addEventListener('load', refreshTicket);
             document.getElementById('generateBtn').addEventListener('click', refreshTicket);
 
-            // 保存小票为图片 (html2canvas)
             function loadHtml2Canvas(callback) {
                 if (window.html2canvas) {
                     callback();
@@ -508,7 +514,7 @@
             }
 
             document.getElementById('printBtn').addEventListener('click', () => {
-                refreshTicket();   // 保存前刷新
+                refreshTicket();
 
                 const ticketElement = document.getElementById('ticketPreview');
 
